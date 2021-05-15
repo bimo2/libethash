@@ -1,0 +1,24 @@
+{
+  "_version": 0,
+  "scripts": {
+    "install": {
+      "info": "Install headers and static/dynamic libraries",
+      "commands": [
+        "make install"
+      ]
+    },
+    "build": {
+      "info": "Automake and configure build files",
+      "commands": [
+        "autoreconf --force --install .",
+        "./configure"
+      ]
+    },
+    "clean": {
+      "info": "Delete cache and build files",
+      "commands": [
+        "git clean -Xfd"
+      ]
+    }
+  }
+}
