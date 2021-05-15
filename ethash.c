@@ -85,7 +85,7 @@ void ethash_shake256(const unsigned char *input, unsigned int inputByteLen, unsi
   */
 void ethash_sha3_224(const unsigned char *input, unsigned int inputByteLen, unsigned char *output)
 {
-    Keccak(1152, 448, input, inputByteLen, 0x06, output, 28);
+    Keccak(1152, 448, input, inputByteLen, 0x01, output, 28);
 }
 
 /**
@@ -93,7 +93,7 @@ void ethash_sha3_224(const unsigned char *input, unsigned int inputByteLen, unsi
   */
 void ethash_sha3_256(const unsigned char *input, unsigned int inputByteLen, unsigned char *output)
 {
-    Keccak(1088, 512, input, inputByteLen, 0x06, output, 32);
+    Keccak(1088, 512, input, inputByteLen, 0x01, output, 32);
 }
 
 /**
@@ -101,7 +101,7 @@ void ethash_sha3_256(const unsigned char *input, unsigned int inputByteLen, unsi
   */
 void ethash_sha3_384(const unsigned char *input, unsigned int inputByteLen, unsigned char *output)
 {
-    Keccak(832, 768, input, inputByteLen, 0x06, output, 48);
+    Keccak(832, 768, input, inputByteLen, 0x01, output, 48);
 }
 
 /**
@@ -109,7 +109,7 @@ void ethash_sha3_384(const unsigned char *input, unsigned int inputByteLen, unsi
   */
 void ethash_sha3_512(const unsigned char *input, unsigned int inputByteLen, unsigned char *output)
 {
-    Keccak(576, 1024, input, inputByteLen, 0x06, output, 64);
+    Keccak(576, 1024, input, inputByteLen, 0x01, output, 64);
 }
 
 /*
