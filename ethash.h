@@ -1,5 +1,8 @@
-#ifndef _ETHASH_H_
-#define _ETHASH_H_ 1
+// Copyright (c) 2021 Bimal Bhagrath
+// MIT License. See COPYING for more details.
+
+#ifndef _ETHASH_H
+#define _ETHASH_H 1
 
 void ethash_shake128(const unsigned char *input, unsigned int inputByteLen, unsigned char *output, int outputByteLen);
 
