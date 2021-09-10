@@ -1,24 +1,27 @@
 {
-  "_version": 0,
+  "_dna": 0,
+  "project": "bimo2/libethash",
+  "dependencies": {
+    "Autotools": [
+      "autoreconf",
+      "https://www.gnu.org/software/autoconf/"
+    ]
+  },
   "scripts": {
-    "install": {
-      "info": "Install headers and static/dynamic libraries",
-      "commands": [
-        "make install"
-      ]
-    },
     "build": {
-      "info": "Automake and configure build files",
-      "commands": [
+      "?": "Automake and configure build files",
+      "run": [
         "autoreconf --force --install .",
         "./configure"
       ]
     },
+    "install": {
+      "?": "Install headers and static/dynamic libraries",
+      "run": "make install"
+    },
     "clean": {
-      "info": "Delete cache and build files",
-      "commands": [
-        "git clean -Xfd"
-      ]
+      "?": "Delete cache and build files",
+      "run": "git clean -Xfd"
     }
   }
 }
