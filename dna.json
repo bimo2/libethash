@@ -2,9 +2,11 @@
   "_dna": 0,
   "project": "bimo2/libethash",
   "dependencies": {
-    "Autotools": [
+    "Automake": [
+      "automake",
       "autoreconf",
-      "https://www.gnu.org/software/autoconf/"
+      "m4",
+      "libtool"
     ]
   },
   "scripts": {

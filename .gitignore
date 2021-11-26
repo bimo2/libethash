@@ -15,6 +15,7 @@ README
 *.so.*
 
 # M4
+*~
 *.cache/
 .deps/
 .libs/

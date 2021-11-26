@@ -1,10 +1,10 @@
 dnl * Copyright (c) 2021 Bimal Bhagrath
 dnl * MIT License. See COPYING for more details.
 
-m4_syscmd([ln -sfn README.md README])
-m4_syscmd([ln -sfn README.md NEWS])
-m4_syscmd([ln -sfn README.md AUTHORS])
-m4_syscmd([ln -sfn README.md ChangeLog])
+m4_syscmd([ln -sfn readme.txt README])
+m4_syscmd([ln -sfn readme.txt NEWS])
+m4_syscmd([ln -sfn readme.txt AUTHORS])
+m4_syscmd([ln -sfn readme.txt ChangeLog])
 
 AC_INIT([libethash], [0.1.0], [bimo.17@outlook.com])
 AC_CONFIG_AUX_DIR([m4.cache])
